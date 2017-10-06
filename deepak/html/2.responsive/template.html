@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your site description." />
+    <title>Responsive Multi-Column Form</title>
+
+    <link href="responsive.min.css" rel="stylesheet" />
+    <style>
+        .inline{
+            display: inline-block;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-s-6">
+                    <h1>frm_first_half</h1>
+                    <table class="table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row">frm_grid_first</th>
+                                <td><input type="checkbox" id="frm_grid_first" name="frm_grid_first" /></td>
+                                <td><input type="checkbox" id="frm_grid_first" name="frm_grid_first" /></td>
+                                <td><input type="checkbox" id="frm_grid_first" name="frm_grid_first" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">frm_grid</th>
+                                <td><input type="checkbox" id="frm_grid" name="frm_grid" /></td>
+                                <td><input type="checkbox" id="frm_grid" name="frm_grid" /></td>
+                                <td><input type="checkbox" id="frm_grid" name="frm_grid" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">frm_grid_odd</th>
+                                <td><input type="radio" id="frm_grid_odd" name="frm_grid_odd" /></td>
+                                <td><input type="radio" id="frm_grid_odd" name="frm_grid_odd" /></td>
+                                <td><input type="radio" id="frm_grid_odd" name="frm_grid_odd" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">frm_grid_even</th>
+                                <td><input type="radio" id="frm_grid_even" name="frm_grid_even" /></td>
+                                <td><input type="radio" id="frm_grid_even" name="frm_grid_even" /></td>
+                                <td><input type="radio" id="frm_grid_even" name="frm_grid_even" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-s-6">
+                    <div class="row">
+                        <div class="col-s-12">
+                        <h1>frm_last_half</h1>
+                            <div class="row">
+                                <div class="col-s-6">
+                                    <label for="frm_first_half">frm_first_half</label>
+                                    <div class="row">
+                                        <div class="col-s-12">
+                                            <label class="inline">
+                                                <input type="radio" name="choice" value="Yes" checked>
+                                                <span> Yes </span>
+                                            </label>
+                                            <label class="inline">
+                                                <input type="radio" name="choice" value="No">
+                                                <span> No </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-s-6">
+                                    <label for="dollar">frm_total frm_last_half</label><span id="dollar">$ 85.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-s-12">
+                            <label for="frm_three_col">frm_three_col</label>
+                            <div class="row">
+                                <div class="col-s-12">
+                                    <label class="inline" for="1"><input type="radio" id="1" name="frm_three_col" /><span>1</span></label>
+                                    <label class="inline" for="2"><input type="radio" id="2" name="frm_three_col" /><span>2</span></label>
+                                    <label class="inline" for="3"><input type="radio" id="3" name="frm_three_col" /><span>3</span></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-s-12">
+                                    <label class="inline" for="4"><input type="radio" id="4" name="frm_three_col" /><span>4</span></label>
+                                    <label class="inline" for="5"><input type="radio" id="5" name="frm_three_col" /><span>5</span></label>
+                                    <label class="inline" for="6"><input type="radio" id="6" name="frm_three_col" /><span>6</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12">
+                    <h1>End Column Section</h1>
+                    <div class="row">
+                        <div class="col-s-6">
+                            <div class="row">
+                                <div class="col-s-12">
+                                <label for="ecs"><span>frm_first_half</span>
+                                <input type="text" id="ecs" name="frm_first frm_half"/></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-s-6">
+                                    <label for="frm_three_col"><span>frm_first_fourth</span>
+                                    <select id="select-default2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select></label>
+                                </div>
+                                <div class="col-s-6">
+                                    <label for="frm_three_col"><span>frm_fourth</span>
+                                    <select id="select-default2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-s-6">
+                            <label for="frm_three_col"><span>frm_last_half frm_scroll_box</span>
+                            <select id="multi-fields" class="multiselect-ui form-control" multiple="multiple" size="5">
+                                <option value="AR">AK</option>
+                                <option value="AZ">AL</option>
+                                <option value="AR">AR</option>
+                                <option value="AZ">AZ</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="OZ">CT</option>
+                                <option value="ZA">DC</option>
+                                <option value="OZ">DE</option>
+                                <option value="ZA">FL</option>
+                                <option value="OZ">GA</option>
+                            </select></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12">
+                    <div class="row">
+                        <div class="col-s-4">
+                            <label for="ecs1"><span>frm_first_third</span>
+                            <input type="text" id="ecs1" name="frm_first_third"/></label>
+                        </div>
+                        <div class="col-s-4">
+                        <label for="ecs2"><span>frm_third</span>
+                        <input type="text" id="ecs2" name="frm_first_third"/></label>
+                        </div>
+                        <div class="col-s-4">
+                        <label for="ecs3"><span>frm_last_third</span>
+                        <input type="text" id="ecs3" name="frm_first_third"/></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12">
+                    <div class="row">
+                        <div class="col-s-8">
+                        <label for="ecsc1"><span>frm_first_two_thirds</span>
+                        <input type="text" id="ecsc1" name="frm_first_third"/></label>
+                        </div>
+                        <div class="col-s-4">
+                        <label for="ecsc2"><span>frm_last_third</span>
+                        <input type="text" id="ecsc2" name="frm_first_third"/></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
