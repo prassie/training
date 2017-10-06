@@ -1,0 +1,209 @@
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your site description." />
+  <title> Responsie Layout!</title>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border:none;
+		width: 97%;
+	}
+
+	td {
+		border: 1px;
+		text-align: left;
+		padding: 8px;
+	}
+
+	th{
+		border: 1px;
+		text-align: left;
+		padding: 8px;
+		
+	}
+
+	.tr1:nth-child(odd) {
+		background-color: #f1f1f1;
+		text-align:center;
+	}
+	.tr2:nth-child(even) {
+		background-color: #f1f1f1;
+		text-align:center;
+	}
+	.select {
+		width: 200px;
+	}
+	.scroll {
+		overflow:auto;
+		border:1px solid #ccc;
+		width:650px;
+		height:140px;
+	}
+	
+	td.col_padding{
+		padding: 2px;
+	}
+	
+	div.new{
+		
+		margin-bottom:30px;
+		top:auto;
+	}
+	
+	#radioGroup .wrap {
+  display: inline-block;
+}
+
+ 
+
+#radioGroup input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.left-div{
+	float:left; 
+	width:50%;
+}
+.right-div{
+	float: right;
+	width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+	.left-div{
+		float: none !important;
+		width: 100% !important;
+	}
+	.right-div{
+		float: none !important;
+		width: 100%;
+	}
+}
+	
+</style>
+</head>
+
+
+<body>
+	<div style="width:100%;height:300px"> 
+		<div class="left-div">
+			<h2> FROM FIRST HALF </h2>
+			<table>
+			<tr class="tr1">
+			<th>From grid first</th>
+			<td><input type="checkbox" name="from grid first" /></td>
+			<td><input type="checkbox"name="from grid first" /></td>
+			<td><input type="checkbox"name="from grid first" /></td>
+			</tr>
+			<tr class="tr1">
+			<th>From grid first</th>
+			<td><input type="checkbox" name="from grid first" /></td>
+			<td><input type="checkbox"name="from grid first" /></td>
+			<td><input type="checkbox"name="from grid first" /></td>
+			</tr>
+			<tr class="tr1">
+			<th>From grid first</th>
+			<td><input type="radio" name="from grid first" /></td>
+			<td><input type="radio"name="from grid first" /></td>
+			<td><input type="radio"name="from grid first" /></td>
+			</tr>
+			<tr class="tr1">
+			<th>From grid first</th>
+			<td><input type="radio" name="from grid first" /></td>
+			<td><input type="radio"name="from grid first" /></td>
+			<td><input type="radio"name="from grid first" /></td>
+			</tr>
+			</table>
+			<h4>END COLOUMN SECTION</h4>
+			<table>
+				<tr  class="tr2">
+					<td colspan="2">from first half</td>
+				</tr>
+				<tr class="tr2">
+					<td colspan="2"><input type="text"name="from first half" size="86"/></td>
+				</tr>
+				<tr class="tr2">
+					<td>from_first_fourth</td>
+					<td>from_fourth</td>
+				</tr>
+				<tr class="tr2">
+					<td><select class="select">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						</select>
+					</td>
+				
+					<td><select class="select">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--<div style="width:100%;height: 430px"> -->
+		<div class="right-div">
+			<h2>frm_last_half</h2>
+			<table>
+			<tr><th>frm_first_half</th>   <th>frm_total_frm_last_half</th></tr>
+			<tr><td><input type="checkbox" name="frm_first_half">Yes
+			<input type="checkbox" name="frm_first_half">No</td>
+			<td>$ 85.00 </td></tr>
+			</table>
+			
+			
+			<table class="some">
+				<th colspan="3"> frm_three_column </th>
+				<tr>
+					<td class="col_padding"><input type="radio" name="from threecol"/>1</td>			
+					<td class="col_padding"><input type="radio" name="from threecol"/>2</td>			
+					<td class="col_padding"><input type="radio" name="from threecol"/>3</td>
+				</tr>
+				<tr>
+					<td class="col_padding"><input type="radio" name="from threecol"/>4</td>	
+					<td class="col_padding"><input type="radio" name="from threecol"/>5</td>		
+					<td class="col_padding"><input type="radio" name="from threecol"/>6</td>
+				</tr>
+			</table>		
+				<h4>frm_last_half_ frm_scroll_box</h4>
+			<div class="scroll">
+			<table><tr><td><input type="checkbox" name="select">select</tr>
+			<tr><td><input type="checkbox"name ="type">type</tr>
+			<tr><td><input type="checkbox"name="font">font</tr>
+			<tr><td><input type="checkbox"name="text">text</tr></table>
+			</div>
+		</div>
+		<!--</div>-->
+	<div class="new">
+	<table>
+	<tr>
+	<td>FORM FIRST THIRD</td>
+	<td>FORM THIRD</td>
+	<td>FORM  LAST THIRD</td>
+	</tr>
+	<tr>
+	<td><input type="text" name="form first third" /></td>
+	<td><input type="text" name="form third"/></td>
+	<td><input type="text" name="form last third"/></td>
+	</tr>
+	<tr>
+	<td colspan="2">FORM FIRST TWO THIRD</td>
+	<td>FORM LAST THIRD</td>
+	</tr>
+	<tr>
+	<td colspan="2"><input type="text" name="form first two third" style="width:670px;"/></td>
+	
+	<td><input type="text" name="form last third"/></td>
+	</tr>
+</table>
+
+	</div>
+	
+</body>
+</html>
