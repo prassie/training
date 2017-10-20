@@ -8,16 +8,16 @@
                <th>Id <th>Name <th>Age <th>salary
             </tr>
             <tr>
-               <td>01 <td>Aravindh <td>20 <td>50000
+               <td>01 <td>Harikesh <td>20 <td>50000
             </tr>
             <tr>
                <td>02 <td>Anbu <td>20 <td>80000
             </tr>
             <tr>
-               <td>03 <td>dinesh <td>20 <td>60000
+               <td>03 <td>Dinesh <td>20 <td>60000
             </tr>
             <tr>
-               <td>04 <td>venkatesh <td>20 <td>70000
+               <td>04 <td>Venkatesh <td>20 <td>70000
             </tr>
          </table>
          <table id="table2" border=1 align=center bgcolor=lightblue>
@@ -69,7 +69,7 @@
          </table>
       </form>
    </body>
-   <script> 
+   <script>
       document.getElementById("table1").style.visibility="hidden";
       document.getElementById("table2").style.visibility="hidden";
       document.getElementById("table3").style.visibility="hidden";
@@ -88,29 +88,29 @@
         }
         function staffadd() {
             var table=document.getElementById("table1");
-            var row=table.insertRow(0);
+            var row=table.insertRow(1);
             var cell1=row.insertCell(0);
             var cell2=row.insertCell(1);
             var cell3=row.insertCell(2);
             var cell4=row.insertCell(3);
-            cell1.innerHTML=(t1.text);
-            cell2.innerHTML=(t2.text);
-            cell3.innerHTML=(t3.text);
-            cell4.innerHTML=(t4.text);
+            cell1.innerHTML=(f1.t1.value);
+            cell2.innerHTML=(f1.t2.value);
+            cell3.innerHTML=(f1.t3.value);
+            cell4.innerHTML=(f1.t4.value);
         }
         function companyadd() {
             var table=document.getElementById("table2");
-            var row=table.insertRow(0);
+            var row=table.insertRow(1);
             var cell1=row.insertCell(0);
             var cell2=row.insertCell(1);
-            cell1.innerHTML=(t5.text);
-            cell2.innerHTML=(t6.text);
+            cell1.innerHTML=(f1.t5.value);
+            cell2.innerHTML=(f1.t6.value);
         }
         function staffdelete() {
-            document.getElementById("table1").deleteRow(0);
+            document.getElementById("table1").deleteRow(f1.t1.value);
         }
         function companydelete() {
-            document.getElementById("table2").deleteRow(0);
+            document.getElementById("table2").deleteRow(f1.t5.value);
         }
    </script>
 </html>
