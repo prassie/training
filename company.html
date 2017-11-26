@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> Company </title>
+
+		<!-- CSS Styles -->
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+
+		<script src="js/companyAdd.js"></script>
+		<script src="js/companyUpdate.js"></script>
+		<script src="js/companyDelete.js"></script>
+
+	</head>
+
+	<body bgcolor="#f1f1f1">
+			
+			<!--Table-->
+			<div class="centerTable" id="tableContent2">
+				<h1 class="heading"> Company Details </h1>
+				<table name="companyTable" id="companyTable">
+					  <tr>
+					    <th>ID</th>
+					    <th>COMPANY NAME</th>
+					    <th>STATE</th>
+					    <th>CITY</th>
+					  </tr>
+				</table>
+			</div>
+
+			<br> <br>
+
+			<!--Form-->
+			<div class="centerForm">
+
+				<center> <h2 class="heading"> Company Form </h2> </center>
+				<form name="company_form" id="company_form">
+					<label>ID</label>
+					<input type="text" id="company_id" name="company_id" placeholder="Your Id">
+
+					<label>COMPANY NAME</label>
+					<input type="text" id="company_name" name="company_name" placeholder="Your Name">
+
+					<label>STATE</label>
+					<input type="text" id="company_state" name="company_state" placeholder="Your State">
+
+					<label>CITY</label>
+					<input type="text" id="company_city" name="company_city" placeholder="Your City">
+
+					<br> <br>
+
+					<center>
+						<input type="button" value="ADD" class="addButton" onclick=companyadd()>
+						<input type="buton" value="UPDATE" class="updateButton" onclick=companyupdate()>
+						<input type="button" value="DELETE" class="deleteButton" onclick=companydelete()>
+					</center>
+				</form>
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> Employee </title>
+
+		<!-- CSS Styles -->
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+
+		<script src="js/employeeAdd.js"></script>
+		<script src="js/employeeUpdate.js"></script>
+		<script src="js/employeeDelete.js"></script>
+
+	</head>
+
+	<body bgcolor="#f1f1f1" onload=onload()>
+			
+			<!--Table-->
+			<div class="centerTable" id="tableContent">
+				<h1 class="heading"> Employee Details </h1>
+				<table name="staffTable" id="staffTable">
+					  <tr>
+					    <th>ID</th>
+					    <th>NAME</th>
+					    <th>AGE</th>
+					    <th>SALARY</th>
+					  </tr>
+				</table>
+			</div>
+
+			<br> <br>
+
+			<!--Form-->
+			<div class="centerForm">
+
+				<center> <h2 class="heading"> Employee Form </h2> </center>
+				<form name="staff_form" id="staff_form">
+					<label>ID</label>
+					<input type="text" id="staff_id" name="staff_id" placeholder="Your Id">
+
+					<label>NAME</label>
+					<input type="text" id="staff_name" name="staff_name" placeholder="Your Name">
+
+					<label>AGE</label>
+					<input type="text" id="staff_age" name="staff_age" placeholder="Your Age">
+
+					<label>SALARY</label>
+					<input type="text" id="staff_salary" name="staff_salary" placeholder="Your Salary">
+
+					<br> <br>
+
+					<center>
+						<input type="button" value="ADD" class="addButton" onclick=staffadd()>
+						<input type="buton" value="UPDATE" class="updateButton" onclick=staffupdate()>
+						<input type="button" value="DELETE" class="deleteButton" onclick=staffdelete()>
+					</center>
+				</form>
+			</div>
+
+	</body>
+</html>
